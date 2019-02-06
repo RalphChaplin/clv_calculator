@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Customer Lifetime Value</title>
+  </head>
+
+  <link rel="stylesheet" href="style.css">
+  <body>
+    <div class="heading">
+
+      <h1 class="siteTitle">CALCULATE YOUR COMPANY’S CLV HERE</h1>
+
+      <h2 class="description">Choose a time period you want to analyze your customers purchases from and use only that data to find out their customer lifetime value when filling out the information below:</h2>
+
+    </div>
+    <div class="calculator">
+
+      <!-- revenue block -->
+      <div class="infoRows" id="totalRevBox">
+
+        <div id="popupRevBubble">
+          <a href="#" id="exOutRev">x</a>
+          <p class="bubbleText">All revenue from your customers in the given time period.<p>
+        </div>
+
+        <p class="inputTitle" id="totalRev">TOTAL REVENUE <a href="#" id="bubbleRevText">&nbsp;&#9432;</a></p>
+
+        <input class="inputField" id="revenueInput" />
+      </div>
+
+      <div class="breakLine"> </div>
+
+      <!-- orders block -->
+      <div class="infoRows" id="totalOrdersBox">
+
+        <div id="popupOrderBubble">
+          <a href="#" id="exOutOrder">x</a>
+          <p class="bubbleText">All orders from your customers in the given time period.<p>
+        </div>
+
+        <p class="inputTitle" id="totalOrders">TOTAL # OF ORDERS <a href="#" id="bubbleOrderText">&nbsp;&#9432;</a></p>
+
+        <input class="inputField" id="orderInput" />
+      </div>
+
+      <div class="breakLine"> </div>
+
+      <!-- customer block -->
+      <div class="infoRows" id="totalCustBox">
+
+        <div id="popupCustBubble">
+          <a href="#" id="exOutCust">x</a>
+          <p class="bubbleText">All customers who purchased from you in the given time period.<p>
+        </div>
+
+        <p class="inputTitle" id="totalCust">TOTAL # OF CUSTOMERS <a href="#" id="bubbleCustText">&nbsp;&#9432;</a></p>
+
+        <input class="inputField" id="customerInput" />
+      </div>
+
+      <div class="breakLine"> </div>
+
+      <!-- average block -->
+      <div class="infoRows" id="totalAvgBox">
+
+        <div id="popupAvgBubble">
+          <a href="#" id="exOutAvg">x</a>
+          <p class="bubbleText">Average amount of time a customer continues shopping with you.<p>
+        </div>
+
+        <p class="inputTitle">AVG CUSTOMER LIFESPAN <a href="#" id="bubbleAvgText">&nbsp;&#9432;</a></p>
+
+        <input class="inputField" id="lifespanInput"/>
+      </div>
+
+      <div class="breakLine"> </div>
+
+      <!-- clv block -->
+      <div class="clvBox">
+        <div id="submitButton" onclick="doMath();">
+          <p id="submitText">SUBMIT</p>
+        </div>
+      </div>
+
+      <p class="answerTitle">YOUR CLV IS:</p>
+      <p id="answer"></p>
+
+    </div>
+
+    <script src="cleave.js"></script>
+    <script type="text/javascript" src="animation.js"></script>
+
+  </body>
+</html>
